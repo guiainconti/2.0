@@ -72,7 +72,86 @@
                     <script src="https://linklist.bio/assets/js/libraries/bootstrap.min.js?v=1.7.0"></script>
             <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/374524218/?random=1658067417616&amp;cv=9&amp;fst=1658067417616&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635471&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=2&amp;u_tz=-180&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;gtm=2oa7d0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fguiainconti.github.io%2F2.0%2F&amp;tiba=TUDO%20CERTO!&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
 
-    
+<script>
+
+    let prefix = ["https://pay.kiwify.com.br"];
+
+ 
+
+function getParams() {
+
+    let t = "",
+
+        e = window.top.location.href,
+
+        r = new URL(e);
+
+    if (null != r) {
+
+        let a = r.searchParams.get("utm_source"),
+
+            n = r.searchParams.get("utm_medium"),
+
+            o = r.searchParams.get("utm_campaign"),
+
+            m = r.searchParams.get("utm_term"),
+
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
+
+    }
+
+    return t
+
+}! function() {
+
+    var t = new URLSearchParams(window.location.search);
+
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+
+    })
+
+}(); </script>
+
+ 
+
+EDUZZ
+
+<script>
+
+(function() {
+
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+
+     if (utmParamQueryString.toString()) {
+
+          var navLinks = document.querySelectorAll('a');
+
+          navLinks.forEach(function(item) {
+
+               if (item.href.indexOf('https://sun.eduzz.com') !== -1) {
+
+                    if (item.href.indexOf('?') === -1) {
+
+                         item.href += '?' + utmParamQueryString.toString();
+
+                    } else {
+
+                         item.href += '&' + utmParamQueryString.toString();
+
+                    }
+
+               }
+
+          });
+
+     }
+
+})();
+
+</script>
+        
 <body class="link-body " style="background: #FFFFFF;" _c_t_common="1">
         <div class="container animated fadeIn">
         <div class="row d-flex justify-content-center text-center">
